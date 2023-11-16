@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Sample Form</title>
+{% endblock %}
+
+{% block body %}
+<h1 class="title">Input Information</h1>
+<form action="/data" method="post">
+    <p>Name <input type="text" name="Name"></p>
+    <p>Country <input type="text" name="Country"></p>
+    <p>Favorite Food <input type="text" name="Favorite Food"></p>
+    <p><input type="submit" name="Submit"></p>
+</form>
+{% endblock %}
